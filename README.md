@@ -19,4 +19,5 @@ The app wll have multiple features, including:-
 This project is the starting point of the park here app. I will be exploring optical character recognition with python.
 The app wil read the text on a parking sign, interpret it and give you a definitive answer on whether you can park there or not based on time and vehicle type.
 
+The project will use the python tesseract (pytesseract) library, which is a wrapper for Google's tesseract OCR engine.
 
