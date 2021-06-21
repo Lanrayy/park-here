@@ -1,5 +1,6 @@
 import pytesseract as tess
 from PIL import Image
+import time
 
 img = Image.open("images/test-image-1.jpeg")
 text = tess.image_to_string(img)
@@ -74,7 +75,12 @@ def get_no_return_time(text):
         print("No timer")
 
 
+seconds = time.time()
+time_struct = time.localtime(seconds)
+print(time_struct)
 
+current_time = time.asctime(time_struct)
+print(current_time)
 
 
 for_resident_permit_holders_only(text)
